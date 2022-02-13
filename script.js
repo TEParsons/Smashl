@@ -916,7 +916,8 @@ function showSquares() {
   // Update output to have squares for each value
   output.innerHTML = `${poke1.value}${poke2.value}${poke3.value}<br>
 ${poke4.value}${poke5.value}${poke6.value}<br>
-${poke7.value}${poke8.value}${poke9.value}`;
+${poke7.value}${poke8.value}${poke9.value}<br>
+teparsons.github.io/Smashl`;
 };
 
 function applyPokemon(obj, pokeNum) {
