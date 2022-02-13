@@ -914,7 +914,8 @@ var pokemon = [];
 
 function showSquares() {
   // Update output to have squares for each value
-  output.innerHTML = `${poke1.value}${poke2.value}${poke3.value}<br>
+  output.innerHTML = `${today.toLocaleDateString()}<br>
+${poke1.value}${poke2.value}${poke3.value}<br>
 ${poke4.value}${poke5.value}${poke6.value}<br>
 ${poke7.value}${poke8.value}${poke9.value}<br>
 teparsons.github.io/Smashl`;
@@ -954,7 +955,7 @@ get some fuckin pussy
 */
 
 // Get today's date as an int (stolen from StackOverflow obv)
-let today = new Date();
+var today = new Date();
 let dd = String(today.getDate()).padStart(2, '0');
 let mm = String(today.getMonth() + 1).padStart(2, '0');
 let yyyy = today.getFullYear();
