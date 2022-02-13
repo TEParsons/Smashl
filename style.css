@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  font-family: Outfit;
+  font-size: 12pt;
+  text-align: center;
+  margin: auto;
+}
+
+body {
+  width: 50rem;
+  margin: auto;
+  padding: 2rem 0 10rem 0;
+}
+
+/* Compress for small windows */
+@media only screen and (max-width: 22cm) {
+  body {
+    width: 80%;
+  }
+}
+
+#pokegrid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: [start] 10rem [middle] 10rem [last] 10rem [end];
+}
+
+#submit, #output {
+  grid-column-start: start;
+  grid-column-end: end;
+  margin: 1rem;
+}
+
+#submit {
+  font-family: Outfit;
+  font-size: 14pt;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #f2f2f2;
+}
+#submit:hover {
+  background-color: blue;
+  color: white;
+}
+
+#output {
+  font-size: 2rem;
+}
+
+.poke {
+  display: grid;
+  margin: 1rem;
+}
+.poke img {
+  width: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+.poke select {
+  margin: 1rem auto;
+
+  border: 1px solid #f2f2f2;
+  outline: none;
+  padding: 1rem 2rem;
+  font-family: Outfit;
+  font-size: 14pt;
+}
